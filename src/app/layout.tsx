@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import LeftSideBar from './components/Sidebar'
+import Navbar from './components/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
           <LeftSideBar />
           <section className="flex min-h-screen flex-1 flex-col items-center bg-dark-1  pt-4">
             <div className="w-full max-w-4xl">
+              <Navbar/>
               {children}
             </div>
           </section>

@@ -1,9 +1,9 @@
 import React from 'react';
-import { IoNotificationsOutline  } from 'react-icons/io5';
-import { FaSearchengin  } from 'react-icons/fa';
-import { CiSearch  } from 'react-icons/ci';
+import { IoNotificationsOutline } from 'react-icons/io5';
+import { FaSearchengin } from 'react-icons/fa';
+import { CiSearch } from 'react-icons/ci';
 const Navbar = () => {
-    const ff = <FaSearchengin/>
+    const ff = <FaSearchengin />
     return (
         <div className='flex justify-between    w-full top-0 bg-slate-300 p-3'>
             <div className='flex items-center'>
@@ -12,10 +12,10 @@ const Navbar = () => {
             </div>
             <div className='flex items-center'>
                 <button className='btn btn-warning'>Geeting started with 0%</button>
-                
-            <button className='text-4xl ml-5'>
-            <IoNotificationsOutline  />
-            </button>
+
+                <button className='text-4xl ml-5'>
+                    <IoNotificationsOutline />
+                </button>
             </div>
         </div>
     );
