@@ -40,7 +40,7 @@ const MessagePage = () => {
                         <TabPanel>
 
                             {
-                                data?.map((m: { id: React.Key | null | undefined; name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; }) =>
+                                data?.map((m) =>
                                 
                                <SubMessage key={m.id} main={m}></SubMessage>
                                 
