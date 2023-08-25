@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -8,7 +9,8 @@ const SubMessage = (main: any) => {
           <Link className='flex justify-between items-center' href={`/components/sub`}>
 
            <div className=''>
-           <img className='rounded-full' width={54} height={54} src={image} alt="" />
+            <Image className='rounded-full' src={image} alt='Image' width={54} height={54}/>
+         
            </div>
            <div className='text-start'>
            <h1 className=''>{name}</h1>

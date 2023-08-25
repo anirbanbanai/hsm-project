@@ -10,7 +10,7 @@ const ButtomBar = () => {
     return (
         <section className='fixed bottom-0 z-10 w-full rounded-t-3xl bg-glassmorphism  backdrop-blur-lg xs:px-7 sm:hidden bg-slate-200 p-4'>
             <div className='flex items-center justify-between gap-3 xs:gap-5'>
-                <Image src={log} alt='logo' width={35}></Image>
+                <Image src={log} alt='logo' width={35} height={35}></Image>
          
             <div className='flex justify-between w-full  gap-6 px-6'>
                <Link href="/feed">

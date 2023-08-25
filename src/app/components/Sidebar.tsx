@@ -12,7 +12,7 @@ const LeftSideBar = () => {
     return (
         <section className='text-black  gap-4 rounded-lg p-4 bg-slate-50 z-20 flex h-screen flex-col justify-between pb-5  max-sm:hidden'>
             <h1 className='flex items-center text-2xl font-bold top-0 gap-2'> 
-            <Image src={log} alt='' width={54} >
+            <Image src={log} alt='Image' width={54} height={54} >
 
             </Image>
            
