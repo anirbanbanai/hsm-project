@@ -8,9 +8,9 @@ const SubMessage = (main: any) => {
           <Link className='flex justify-between items-center' href={`/components/sub`}>
 
            <div className=''>
-           <img className='rounded-full' width={54} src={image} alt="" />
+           <img className='rounded-full' width={54} height={54} src={image} alt="" />
            </div>
-           <div>
+           <div className='text-start'>
            <h1 className=''>{name}</h1>
            <p className='text-sm'>{message}</p>
            </div>

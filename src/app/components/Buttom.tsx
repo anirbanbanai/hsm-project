@@ -4,12 +4,14 @@ import React from 'react';
 import { AiOutlineMessage, AiOutlineShoppingCart } from 'react-icons/ai';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import { MdOutlineFeed } from 'react-icons/md';
-
+import log from "./../../../public/images.jpeg"
+import Image from 'next/image';
 const ButtomBar = () => {
     return (
         <section className='fixed bottom-0 z-10 w-full rounded-t-3xl bg-glassmorphism  backdrop-blur-lg xs:px-7 sm:hidden bg-slate-200 p-4'>
             <div className='flex items-center justify-between gap-3 xs:gap-5'>
-            <img className='rounded-full' width={35} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkp_BVcFsp7yhrx4jgM5LcpxmRJ6_oQIlis8Oc4911EfuLuTiGrlJOXm4jT0YSGMGQn5I&usqp=CAU" alt="" />
+                <Image src={log} alt='logo' width={35}></Image>
+         
             <div className='flex justify-between w-full  gap-6 px-6'>
                <Link href="/feed">
                <h2 className='text-2xl flex items-center gap-2'><MdOutlineFeed />  </h2>
