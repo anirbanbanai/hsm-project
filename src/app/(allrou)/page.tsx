@@ -1,9 +1,10 @@
 import React from 'react';
+import MessagePage from './message/page';
 
 const page = () => {
     return (
         <div>
-            HomePage
+        <MessagePage/>
         </div>
     );
 };
