@@ -1,7 +1,9 @@
+'use client'
+
 import { useEffect, useState } from "react";
 
 
- function Homes({ children }: { children: any}) {
+ function Homes({ children }: { children: React.ReactNode}) {
 
   const [data, setdata] = useState();
     useEffect(() => {
