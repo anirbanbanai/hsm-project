@@ -1,5 +1,6 @@
 "use client"
 import Mmm from '@/app/components/sub/Mmm';
+import SubGroup from '@/app/components/SubGroup';
 import SubMessage from '@/app/components/SubMessage';
 import React, { useEffect, useState } from 'react';
 import { BiSearch } from 'react-icons/bi';
@@ -7,14 +8,21 @@ import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 const MessagePage = () => {
     const [data, setdata] = useState();
+    const [group, setGroup] = useState();
     useEffect(() => {
         fetch("data.json")
             .then(res => res.json())
             .then(data => {
                 setdata(data)
             })
+
+        fetch("group.json")
+            .then(res => res.json())
+            .then(data => {
+                setGroup(data)
+            })
     }, [])
-    console.log(data);
+    console.log(group);
     return (
         <div className='px-8 py-14 bg-slate-100'>
             <div className='flex justify-between'>
@@ -41,20 +49,22 @@ const MessagePage = () => {
 
                             {
                                 data?.map((m) =>
-                                
-                               <SubMessage key={m.id} main={m}></SubMessage>
-                                
+
+                                    <SubMessage key={m.id} main={m}></SubMessage>
+
                                 )
                             }
                         </TabPanel>
                         <TabPanel>
-                            <h2>Any content 2</h2>
+                            {
+                                group?.map(m=><SubGroup key={m.id} main={m}></SubGroup>)
+                            }
                         </TabPanel>
                     </Tabs>
 
                 </div>
                 <div className='border border-l-slate-600 '>
-                  <Mmm/>
+                    <Mmm />
                 </div>
             </div>
         </div>
