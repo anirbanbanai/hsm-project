@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
- function Homes({ children }: { children: React.ReactNode }) {
+ function Homes({ children }: { children: any}) {
 
   const [data, setdata] = useState();
     useEffect(() => {
