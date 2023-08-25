@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Rechard Nelsion",
+    "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg",
+    "time": "2023-08-25T12:00:00Z",
+    "id": "A123",
+    "message": "Hello! How are you, my friend?",
+    "ago": "30m"
+  },
+  {
+    "name": "John Lee",
+    "image": "https://image.shutterstock.com/image-photo/portrait-handsome-caucasian-man-formal-260nw-2142820441.jpg",
+    "time": "2023-08-25T13:30:00Z",
+    "id": "B456",
+    "message": "Hello! How are you, my friend?",
+    "ago": "7h"
+  },
+  {
+    "name": "Charlie",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqs_F5HXvxO11BQPMpF3ymqS4tBKdHrdIWA&usqp=CAU",
+    "time": "2023-08-25T15:15:00Z",
+    "id": "C789",
+    "message": "Hello! How are you, my friend?",
+    "ago": "1h 6m"
+  },
+  {
+    "name": "David",
+    "image": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?w=2000",
+    "time": "2023-08-25T16:45:00Z",
+    "id": "D987",
+    "message": "Hello! How are you, my friend?",
+    "ago": "1h"
+  },
+  {
+    "name": "Eve",
+    "image": "https://img.freepik.com/free-photo/handsome-bearded-guy-posing-against-white-wall_273609-20597.jpg?w=2000",
+    "time": "2023-08-25T18:00:00Z",
+    "id": "E654",
+    "message": "Hello! How are you, my friend?",
+    "ago": "2h 30m"
+  }
+]

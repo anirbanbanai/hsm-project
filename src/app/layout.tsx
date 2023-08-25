@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import LeftSideBar from './components/Sidebar'
 import Navbar from './components/Navbar'
+import ButtomBar from './components/Buttom'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,12 +23,13 @@ export default function RootLayout({
 
         <main className="flex flex-row">
           <LeftSideBar />
-          <section className="flex min-h-screen flex-1 flex-col items-center bg-dark-1  pt-4">
-            <div className="w-full max-w-4xl">
+          <section className="flex min-h-screen flex-1 flex-col items-center bg-dark-1  ">
+            <div className="w-full ">
               <Navbar/>
               {children}
             </div>
           </section>
+          <ButtomBar/>
         </main>
 
       </body>
